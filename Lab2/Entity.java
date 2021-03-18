@@ -170,6 +170,6 @@ public class Entity implements Comparable<Entity> {
 
     @Override
     public int compareTo(Entity o) {
-        return Double.compare(getPosX(), o.getPosX());
+        return Double.compare(MathOperations.getPointsAbs(getPosX(), getPosZ()), MathOperations.getPointsAbs(o.getPosX(), o.getPosZ()));
     }
 }

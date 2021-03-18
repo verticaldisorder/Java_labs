@@ -14,6 +14,9 @@ public class World {
         this.entities = entities;
     }
 
+    public World() {
+    }
+
     public void update() {
         for (int i = 0; i < entities.size(); i++) {
             entities.get(i).update();
